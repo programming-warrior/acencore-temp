@@ -1,0 +1,47 @@
+@keyframes orbit {
+  0% {
+      transform: rotate(0deg);
+  }
+  100% {
+      transform: rotate(360deg);
+  }
+}
+.orbit {
+  position: relative;
+  width: 300px;
+  height: 300px;
+}
+
+.planet {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100px;
+  height: 50px;
+  background-color: #ff6347;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform-origin: -150px 0;
+  border-radius: 5px;
+  animation: orbit 5s linear infinite;
+}
+
+#planet1 {
+  animation-duration: 5s;
+  background-color: #ff6347;
+}
+
+#planet2 {
+  animation-duration: 7s;
+  background-color: #3cb371;
+  transform-origin: -200px 0;
+}
+
+#planet3 {
+  animation-duration: 10s;
+  background-color: #1e90ff;
+  transform-origin: -250px 0;
+}
+

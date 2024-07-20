@@ -1,0 +1,73 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+.custom-gradient {
+  background: linear-gradient(
+    137.34deg,
+    rgba(0, 119, 194, 0.1) 23.98%,
+    rgba(112, 117, 122, 0.1) 65.73%
+  );
+  backdrop-filter: blur(40px);
+  
+  border: 1px solid #003658;
+
+  /* border: 1px solid #013d63; */
+  /* border-top: 1px solid #013D63;
+  border-left: 1px solid #013D63;
+  border-bottom: 1px solid #013D63;
+  border-right: 1px solid #090F18; */
+}
+
+.button-gradient {
+  background: linear-gradient(92.12deg, #22B4F8 0.47%, #EDF3C2 136.89%);
+  /* backdrop-filter: blur(12px); */
+  
+
+  /* border: 1px solid #013d63; */
+  /* border-top: 1px solid #013D63;
+  border-left: 1px solid #013D63;
+  border-bottom: 1px solid #013D63;
+  border-right: 1px solid #090F18; */
+}
+
+
+
+.textgradient {
+  background-image: linear-gradient(92.12deg, #22b4f8 0.47%, #edf3c2 136.89%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.buttonGradientClass {
+  /* background: rgba(0, 119, 194, 0.07); */
+  box-shadow: inset 0px 4px 36px rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(24px);
+}
+/* bg-gradient-to-r from-[#22B4F8] to-[#EDF3C2] */
+.footer-gradient {
+  /* background: linear-gradient(
+    to bottom,
+    #0077c2 0%,
+    #0073bc 3%,
+    #006db2 8%,
+    #0069ab 12%,
+    #0068aa 12%,
+    #0066a6 12%,
+    #005a92 25%,
+    #004d7d 36%,
+    #003e66 48%,
+    #002f4d 60%,
+    #002238 71%,
+    #00131f 84%,
+    #00090f 92%,
+    #00060a 95%
+  ); */
+}

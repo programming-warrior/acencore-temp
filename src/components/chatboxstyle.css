@@ -1,0 +1,137 @@
+
+.chat-card {
+    margin-top: 65px;
+    padding-top: 25px;
+    color: white;
+    width: 450px;
+    height: 450px;
+    padding: 20px;
+    border: 1px solid #004570;
+    border-radius: 20px;
+    background: linear-gradient(137.34deg, rgba(0, 119, 194, 0.1) 23.98%, rgba(112, 117, 122, 0.1) 65.73%);
+    backdrop-filter: blur(45.85px);
+    z-index: 10;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .chat-message, .chat-message-orion, .chat-schedule {
+    display: flex;
+    align-items: center;
+    margin-bottom: 35px;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+  }
+  
+  .chat-message.visible, .chat-message-orion.visible, .chat-schedule.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+  .chat-message-orion {
+    flex-direction: row-reverse;
+  }
+  
+  .chat-avatar img{
+    width: 60px;
+    height: 60px;
+    border-radius: 40%;
+    margin-right: 10px;
+    background-color: #23262b;
+    border: 1px solid #004570;
+  }
+
+
+  
+  .chat-message-orion .chat-avatar img {
+    margin-left: 10px;
+    margin-right: 0;
+    border: 1px solid #004570;
+  }
+  
+  .chat-content {
+    background: linear-gradient(92.12deg, rgba(34, 180, 248, 0.25) 0.47%, rgba(237, 243, 194, 0.25) 136.89%);
+    border-top-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    border-top-right-radius: 30px;
+    padding: 10px 15px;
+    flex-grow: 1;
+    border: 1px solid #004570;
+  }
+  
+  .chat-content-orion {
+    background: linear-gradient(92.12deg, rgba(34, 180, 248, 0.25) 0.47%, rgba(237, 243, 194, 0.25) 136.89%);
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+    border-top-right-radius: 30px;
+    padding: 10px 15px;
+    flex-grow: 1;
+    border: 1px solid #004570;
+  }
+  
+  .chat-name {
+    font-weight: bold;
+    font-size: 10px;
+    margin-bottom: 5px;
+  }
+  
+  .chat-name-orion {
+    font-weight: bold;
+    font-size: 10px;
+    margin-bottom: 5px;
+    /* float: right; */
+  }
+  
+  .chat-text {
+    font-size: 0.9em;
+  }
+  
+  .chat-schedule {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid #004570;
+    border-radius: 20px;
+    background: linear-gradient(180deg, rgba(6, 29, 44, 0.8), rgba(0, 2, 3, 0.8));
+    padding: 10px 15px;
+    margin-top: 20px;
+  }
+  
+  .schedule-info {
+    font-size: 10px;
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .schedule-date {
+    display: flex;
+    align-items: center;
+  }
+  
+  .schedule-date .icon {
+    margin-right: 5px;
+  }
+  
+  .schedule-time {
+    font-size: 10px;
+    font-weight: bold;
+    color: #ccc;
+  }
+  
+  .join-button {
+    border: 1px solid #004570;
+    font-size: 10px;
+    font-weight: bold;
+    width: fit-content;
+    background-color: #23262b;
+    border-radius: 20px;
+    padding: 10px 15px;
+    color: white;
+    cursor: pointer;
+  }
+  
+  .join-button:hover {
+    background-color: #004bb5;
+  }
+  

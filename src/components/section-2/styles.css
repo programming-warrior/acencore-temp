@@ -1,0 +1,363 @@
+html,
+label {
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    color: #ffffff;
+    background-color: #000000;
+}
+
+
+
+.shimmer-border-notes-box {
+    /* position: relative;
+    left: 380px;
+    bottom: 350px; */
+    width: 350px;
+
+    background: linear-gradient(180deg, rgba(6, 29, 44, 0.8), rgba(0, 2, 3, 0.8));
+    border-radius: 20px;
+    padding-left: 3px;
+    padding-top: 2px;
+    padding-right: 2px;
+    opacity: 0;
+}
+
+.shimmer-border-notes-box.visible {
+    opacity: 1;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.notes-on-david-box {
+    width: 350px;
+    /* padding-top: 25px; */
+    color: white;
+    /* width: 350px; */
+    padding: 20px;
+
+    /* Same color as other borders */
+    /* border: 1px solid #004570; */
+    border-radius: 20px;
+    background: linear-gradient(180deg, rgba(6, 29, 44, 0.8), rgba(0, 2, 3, 0.8));
+    /* Semi-transparent gradient */
+    /* Light text color */
+    z-index: 10;
+    /* Ensure it appears on top */
+}
+
+.notes-on-david-box h2 {
+    font-weight: bold;
+    color: #ffffff;
+    margin: 10px;
+    font-size: 17px;
+    /* Adjust color as needed */
+}
+
+.interviwed-on {
+    color: #59A5F5;
+    margin-bottom: 10px;
+    margin-left: 10px;
+}
+
+.text-david {
+    margin-top: 10px;
+    margin-left: 10px;
+    font-weight: lighter;
+}
+
+.performance-section {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+.performance-bar {
+    width: 100%;
+    height: 8px;
+    background: #13230a;
+    border-radius: 4px;
+    overflow: hidden;
+    margin-right: 10px;
+}
+
+.performance-bar-fill {
+    height: 100%;
+    background: #75ff91;
+    width: 0;
+    transition: width 1s;
+}
+
+.performance-percentage {
+    font-size: 14px;
+}
+
+.performance {
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+.face-cards {
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+.interview-progress-box.visible {
+    opacity: 1;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.interview-progress-box {
+    /* position: relative;
+    left: 450px;
+    bottom: 50px; */
+    padding-top: 25px;
+    color: white;
+    width: 300px;
+    padding: 20px;
+    /* Same color as other borders */
+    /* border: 1px solid #004570; */
+    border-radius: 20px;
+    background: linear-gradient(180deg, rgba(6, 29, 44, 0.8), rgba(0, 2, 3, 0.8));
+    margin: 5px;
+    z-index: 10;
+    opacity: 0;
+
+}
+
+.interview-progress-subbox {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 10px;
+}
+
+.interview-progress-box-subheadings {
+    flex: 1;
+}
+
+.interview-progress-box-numbers {
+    margin-left: 8px;
+    /* adjust the margin as needed */
+}
+
+.interview-progress-box h2 {
+    font-weight: bold;
+    color: #ffffff;
+    margin: 10px;
+    font-size: 17px;
+}
+
+.progress-bar {
+    width: 100%;
+    height: 8px;
+    background: #13230a;
+    border-radius: 4px;
+    overflow: hidden;
+    margin-right: 10px;
+}
+
+.progress-bar-scheduled {
+    width: 100%;
+    height: 8px;
+    background: #002f39;
+    border-radius: 4px;
+    overflow: hidden;
+    margin-right: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+}
+
+.progress-bar-fill-scheduled {
+    height: 100%;
+    background-color: #0994d4;
+    border-radius: 10px;
+    transition: width 0.3s ease;
+}
+
+.progress-bar-completed {
+    width: 100%;
+    height: 8px;
+    background: #002c22;
+    border-radius: 4px;
+    overflow: hidden;
+    margin-right: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+}
+
+.progress-bar-fill-completed {
+    height: 100%;
+    background-color: #16C098;
+    border-radius: 10px;
+    transition: width 0.3s ease;
+
+}
+
+.progress-bar-cancelled {
+    width: 100%;
+    height: 8px;
+    background: #380000;
+    border-radius: 4px;
+    overflow: hidden;
+    margin-right: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+}
+
+.progress-bar-fill-cancelled {
+    height: 100%;
+    background-color: #EB5757;
+    border-radius: 10px;
+    transition: width 0.3s ease;
+}
+
+
+.progress-percentage {
+    font-size: 14px;
+    font-weight: bold;
+    text-align: right;
+    margin-top: 5px;
+}
+
+.card-container {
+    /* position: relative;
+    bottom: 250px;
+    left: 70px; */
+    width: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+.card {
+    width: 400px;
+    padding: 20px;
+   
+    border-radius: 20px;
+    background: linear-gradient(180deg, rgba(6, 29, 44, 0.9), rgba(0, 2, 3, 0.9));
+    backdrop-filter: blur(45.85px);
+    color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.card.visible {
+    opacity: 1;
+    transition: opacity 0.5s ease-in-out;
+
+}
+
+.round {
+    margin-bottom: 20px;
+
+}
+
+.round-header-parent {
+    border: 1px solid #0077C2;
+    background: linear-gradient(137.34deg, rgba(0, 119, 194, 0.1) 23.98%, rgba(112, 117, 122, 0.1) 65.73%);
+    border-radius: 15px;
+    padding: 10px;
+
+}
+
+.round-header {
+    display: flex;
+    /* justify-content: space-between; */
+    align-items: center;
+    /* border: 2px solid red; */
+}
+
+.round-title {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.round-badge {
+    background: linear-gradient(92.12deg, #22B4F8 0.47%, #EDF3C2 136.89%);
+    width: 34.43px;
+    height: 12px;
+    padding: 2.34px 5.93px 2.66px 5.5px;
+    gap: 0px;
+    border-radius: 2px;
+    opacity: 0px;
+    font-size: 6px;
+    color: black;
+    margin-left: 15px;
+
+}
+
+.round-percentage {
+    width: 50px;
+    height: 50px;
+    position: fixed;
+    left: 300px;
+}
+
+.round-details {
+    margin-top: 10px;
+}
+
+.round-parameters {
+    font-size: 0.9em;
+    margin-bottom: 10px;
+}
+
+.round-metrics {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.round-metrics hr {
+    border: none;
+    height: 0.5px;
+    background-color: rgb(0, 22, 111);
+    /* margin-top: 4px;
+    margin-bottom: 4px; */
+}
+
+.round-metric {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.metric-label {
+    font-size: 0.9em;
+    margin-top: 4px;
+    /* margin-bottom: 4px; */
+    flex: 1;
+
+}
+
+.metric-bar {
+    width: 30%;
+    height: 10px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 5px;
+    margin: 0 10px;
+    overflow: hidden;
+}
+
+.metric-fill {
+    height: 100%;
+    background: linear-gradient(92.12deg, #22B4F8, #EDF3C2);
+    transition: width 0.6s ease-out;
+    border-radius: 10px
+}
+
+.metric-percentage {
+    font-size: 0.9em;
+}

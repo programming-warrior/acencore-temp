@@ -1,0 +1,37 @@
+
+
+
+.top-left-upper {
+  animation: slideInFromBottom 1s ease-out forwards;
+  animation-delay: 1s; 
+  opacity: 0; 
+}
+.top-left-lower {
+  border-radius: 0px 0px 16px 16px;
+  animation: slideInFromBottom 1s ease-out forwards;
+  animation-delay: 0.5s;
+  opacity: 0; 
+}
+
+.top-right {
+  animation: slideInFromBottom 1s ease-out forwards;
+  animation-delay: 1s; 
+  opacity: 0; 
+}
+
+
+
+
+  @keyframes slideInFromBottom {
+    0% {
+        transform: translateY(100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+
+
